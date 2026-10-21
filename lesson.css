@@ -266,8 +266,7 @@ input[type="radio"] {
 }
 
 button,
-select,
-textarea {
+select {
   font: inherit;
 }
 
@@ -365,32 +364,6 @@ textarea {
   color: #b9ccc0;
 }
 
-.reflection-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.2rem;
-}
-
-.reflection-grid label {
-  display: grid;
-  gap: 0.6rem;
-  font-weight: 600;
-}
-
-.reflection-grid label:last-child {
-  grid-column: 1 / -1;
-}
-
-textarea {
-  width: 100%;
-  padding: 0.85rem;
-  border: 1px solid #b6c2b7;
-  border-radius: 0;
-  background: var(--white);
-  color: var(--ink);
-  resize: vertical;
-}
-
 .sources-section {
   background: #e8eddf;
 }
@@ -464,17 +437,12 @@ textarea {
   }
 
   .case-grid,
-  .law-grid,
-  .reflection-grid {
+  .law-grid {
     grid-template-columns: 1fr;
   }
 
   .law-grid {
     gap: 0;
-  }
-
-  .reflection-grid label:last-child {
-    grid-column: auto;
   }
 
   .permission-demo {
