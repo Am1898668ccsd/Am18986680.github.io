@@ -424,35 +424,6 @@ textarea {
   color: var(--muted);
 }
 
-.peer-section {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.peer-section > p:not(.eyebrow) {
-  max-width: 800px;
-}
-
-.test-log {
-  display: grid;
-  gap: 0.5rem;
-  color: var(--muted);
-}
-
-.test-log div {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.8fr) 1fr;
-  gap: 1rem;
-}
-
-.test-log dt {
-  font-weight: 600;
-}
-
-.test-log dd {
-  margin: 0;
-}
-
 .footer {
   background: #102d29;
   color: #d9e6dc;
@@ -514,10 +485,6 @@ textarea {
     grid-column: auto;
   }
 
-  .test-log div {
-    grid-template-columns: 1fr;
-    gap: 0.1rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
