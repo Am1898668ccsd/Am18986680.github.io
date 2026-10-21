@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive mini-lesson about location privacy, ethical choices, and U.S. children's privacy law.">
+  <title>Location, Please? | Safety, Law &amp; Ethics</title>
+  <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Location, Please? home">
+      <span class="brand-mark" aria-hidden="true">●</span>
+      SAFETY / LAW / ETHICS
+    </a>
+    <span class="standard">Performance Standard 5.3</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">A 5-minute decision lab</p>
+      <h1>Location,<br><span>please?</span></h1>
+      <p class="intro">Your map app can guide you home. But what else can a trail of GPS points reveal, and who should get to keep it?</p>
+      <a class="primary-link" href="#case">Enter the case <span aria-hidden="true">↓</span></a>
+      <div class="hero-note"><span aria-hidden="true">◎</span> No real location is requested or collected here.</div>
+    </section>
+
+    <section class="case-section section-wrap" id="case">
+      <div class="section-heading">
+        <p class="eyebrow">01 / The case</p>
+        <h2>A free ride-planning app</h2>
+        <p>RouteBuddy gives useful turn-by-turn directions. It asks for location access <strong>all the time</strong>, even when you are not using it. Its privacy notice says location may be shared with “partners” to improve services, but does not name them.</p>
+      </div>
+      <div class="case-grid">
+        <article class="fact-card">
+          <span class="card-icon" aria-hidden="true">⌖</span>
+          <h3>What could be captured?</h3>
+          <p>GPS points over time can reveal a route, approximate home and school/work, regular visits, and daily routines—not just the destination you typed.</p>
+        </article>
+        <article class="fact-card">
+          <span class="card-icon" aria-hidden="true">↗</span>
+          <h3>Why is that a concern?</h3>
+          <p>Unexpected collection or sharing can expose sensitive routines and remove your control. A useful feature does not automatically justify collecting location in the background.</p>
+        </article>
+      </div>
+      <p class="distinction"><strong>Keep these questions separate:</strong> ethics asks what is responsible and respectful; law asks what rules apply. An action can be legal yet still raise an ethical concern.</p>
+    </section>
+
+    <section class="decision-section">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <p class="eyebrow">02 / Your call</p>
+          <h2>Make the privacy call</h2>
+          <p>Choose the best answer for each situation. Check your reasoning to see feedback—not just a score.</p>
+        </div>
+        <div class="quiz-card" data-question="q1">
+          <p class="question-number">DECISION 1</p>
+          <h3>RouteBuddy wants “Allow all the time.” What is the most privacy-protective first move?</h3>
+          <div class="choices">
+            <label><input type="radio" name="q1" value="a"> Allow it; GPS only records the destination.</label>
+            <label><input type="radio" name="q1" value="b"> Ask whether location is needed in the background; choose “while using” or deny it if not.</label>
+            <label><input type="radio" name="q1" value="c"> Give it permission because a free app cannot share data.</label>
+          </div>
+          <button class="check-button" type="button">Check my reasoning</button>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+        <div class="quiz-card" data-question="q2">
+          <p class="question-number">DECISION 2</p>
+          <h3>Which detail is most likely to be inferred from repeated location points?</h3>
+          <div class="choices">
+            <label><input type="radio" name="q2" value="a"> A person’s usual home-to-school route and schedule.</label>
+            <label><input type="radio" name="q2" value="b"> The password used to unlock the phone.</label>
+            <label><input type="radio" name="q2" value="c"> The exact words typed into every other app.</label>
+          </div>
+          <button class="check-button" type="button">Check my reasoning</button>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+        <div class="quiz-card" data-question="q3">
+          <p class="question-number">DECISION 3 / U.S. LAW</p>
+          <h3>RouteBuddy is directed to children under 13 and collects their precise GPS location. Which statement is most accurate?</h3>
+          <div class="choices">
+            <label><input type="radio" name="q3" value="a"> COPPA applies to every app user, whatever their age.</label>
+            <label><input type="radio" name="q3" value="b"> Under the U.S. COPPA Rule, child-directed services collecting a child’s personal information generally need notice and verifiable parental consent, subject to limited exceptions.</label>
+            <label><input type="radio" name="q3" value="c"> COPPA is an ethical guideline, not a regulation.</label>
+          </div>
+          <button class="check-button" type="button">Check my reasoning</button>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+        <p class="score" id="score" aria-live="polite">Answer all three decisions to see your progress.</p>
+      </div>
+    </section>
+
+    <section class="permission-section section-wrap">
+      <div class="section-heading">
+        <p class="eyebrow">03 / Try the code interaction</p>
+        <h2>Permission is a choice</h2>
+        <p>Change the setting below. This tiny simulation changes what the app should be able to access; it does not request your device’s location.</p>
+      </div>
+      <div class="permission-demo">
+        <label for="permission">RouteBuddy location permission</label>
+        <select id="permission">
+          <option value="always">Allow all the time</option>
+          <option value="while-using" selected>Allow only while using</option>
+          <option value="never">Don't allow</option>
+        </select>
+        <p class="permission-result" id="permission-result" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="law-section">
+      <div class="section-wrap law-grid">
+        <div>
+          <p class="eyebrow">04 / Law is not the whole answer</p>
+          <h2>What COPPA does—and does not—say</h2>
+        </div>
+        <div>
+          <p><strong>Jurisdiction: United States (federal).</strong> The Children’s Online Privacy Protection Act Rule (COPPA), 16 C.F.R. Part 312, covers operators of child-directed websites or online services that collect personal information from children under 13, and general-audience services with actual knowledge they are collecting it from a child under 13. The Rule includes notice and verifiable parental-consent requirements, with exceptions. The FTC Rule treats persistent identifiers and geolocation data sufficient to identify a street and city as personal information.</p>
+          <p>COPPA is not a blanket privacy law for every person or every app. Whether it applies depends on the service, the user, and the data collection. For older users, or when COPPA does not apply, data minimization and clear permission choices can still be responsible ethical practices.</p>
+          <p class="source-note">This is an educational summary, not legal advice. Check the current rule and the app’s actual practices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reflection-section section-wrap">
+      <div class="section-heading">
+        <p class="eyebrow">05 / Show your understanding</p>
+        <h2>Explain, then improve</h2>
+        <p>Use your own words. Your answers stay in this page and are not sent anywhere.</p>
+      </div>
+      <div class="reflection-grid">
+        <label for="explain">Explain one ethical concern and how it differs from the legal COPPA example.
+          <textarea id="explain" rows="4" placeholder="An ethical concern is… The law is different because…"></textarea>
+        </label>
+        <label for="interaction">Describe one thing you observed when you changed the permission setting above.
+          <textarea id="interaction" rows="4" placeholder="When I changed the setting to…"></textarea>
+        </label>
+        <label for="revision">After classmate testing, what did you change or plan to improve?
+          <textarea id="revision" rows="4" placeholder="My classmate noticed… I changed / will improve…"></textarea>
+        </label>
+      </div>
+    </section>
+
+    <section class="sources-section">
+      <div class="section-wrap">
+        <p class="eyebrow">Sources / Go further</p>
+        <h2>Read the primary sources</h2>
+        <ol class="sources">
+          <li><a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312" target="_blank" rel="noopener noreferrer">U.S. Electronic Code of Federal Regulations, 16 C.F.R. Part 312 — Children’s Online Privacy Protection Rule</a><span>Official federal regulation; see definitions and requirements in §§ 312.2, 312.3, and 312.5.</span></li>
+          <li><a href="https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy" target="_blank" rel="noopener noreferrer">U.S. Federal Trade Commission — Children’s Privacy</a><span>Official regulator guidance explaining COPPA coverage and compliance.</span></li>
+          <li><a href="https://www.nist.gov/privacy-framework" target="_blank" rel="noopener noreferrer">U.S. National Institute of Standards and Technology — Privacy Framework</a><span>A voluntary risk-management framework; useful context for thinking about privacy, not a law.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="peer-section section-wrap">
+      <p class="eyebrow">Peer test / Complete before submission</p>
+      <h2>Classmate feedback &amp; revision log</h2>
+      <p><strong>Testing is not yet documented.</strong> Ask a classmate to complete the three decisions and permission interaction without coaching. Record the real feedback and one improvement here before turning in the site.</p>
+      <dl class="test-log">
+        <div><dt>Classmate (name or initials):</dt><dd>________________________</dd></div>
+        <div><dt>Date tested:</dt><dd>________________________</dd></div>
+        <div><dt>What confused them or did not work?</dt><dd>________________________</dd></div>
+        <div><dt>One improvement made based on feedback:</dt><dd>________________________</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built for Performance Standard 5.3: explain safety, law, and ethics related to computing.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  <script src="lesson.js"></script>
+</body>
+</html>
